@@ -1,0 +1,19 @@
+* Evil WSL mode
+
+Copy/paste to and from Windows Terminal.
+
+** SETUP in Spacemacs
+
+1. Copy ~evil-wsl.el~ to: ~/.emacs.d/private/local/evil-mode/evil-wsl.el
+2. ~SPC f e d~ (open ~.spacemacs~)
+3. Under ~dotspacemacs/user-config ()~, add
+
+#+begin_src
+(load-file "~/.emacs.d/private/local/evil-mode/evil-wsl.el")
+#+end_src
+
+** HOW TO USE in Spacemacs
+
+- Enable evil-wsl-mode
+- To copy: ~g y~
+- To paste: ~g p ENTER~
